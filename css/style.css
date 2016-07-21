@@ -1,0 +1,14 @@
+.table {
+    margin-top: 50px;
+    background-color: white;
+}
+
+.table .th {
+    background-color: rgb(58, 189, 168);
+    color: white;
+}
+
+
+body {
+    background: #eee;
+}

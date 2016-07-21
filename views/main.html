@@ -1,0 +1,39 @@
+<div class="container">
+    <table class='table table-bordered'>
+        <tr class='th'>
+            <th>
+                Nom
+            </th>
+            <th>
+                Numéro
+            </th>
+            <th>
+                Supprimer
+            </th>
+        </tr>
+        <tr ng-repeat='contact in contacts'>
+            <td>
+                {{contact.nom}}
+            </td>
+            <td>
+                {{contact.numero}}
+            </td>
+            <td>
+                <button class='btn btn-danger' ng-click='delete($index)'>Supprimer</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Nom</label>
+                <input ng-model='new.nom' placeholder="Antoine">
+            </td>
+            <td>
+                <label>Numéro</label>
+                <input ng-model='new.numero' placeholder="06-XX-XX-XX-XX">
+            </td>
+            <td>
+                <button ng-click='add()' class='btn btn-success'>Ajouter</button>
+            </td>
+        </tr>
+    </table>
+</div>
